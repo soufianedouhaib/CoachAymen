@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Coach Aymen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Cairo:wght@400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-row">
+    <a class="brand" href="index.html" data-internal>
+      <svg class="thread-mark" viewBox="0 0 64 10"><path class="t1" d="M0 2 Q16 2 32 5"/><path class="t2" d="M0 5 Q16 5 32 5"/><path class="t3" d="M0 8 Q16 8 32 5"/></svg>
+      <span data-i18n="brand">Aïcha Rahal</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-internal data-i18n="nav.home">Home</a></li>
+      <li><a href="about.html" data-internal data-i18n="nav.about">About</a></li>
+      <li><a href="coaching.html" data-internal data-i18n="nav.coaching">Coaching</a></li>
+      <li><a href="lessons.html" data-internal data-i18n="nav.lessons">Private Lessons</a></li>
+      <li><a href="advertising.html" data-internal data-i18n="nav.advertising">Advertising</a></li>
+      <li><a href="partnerships.html" data-internal data-i18n="nav.partnerships">Partnerships</a></li>
+      <li><a href="testimonials.html" data-internal data-i18n="nav.testimonials">Testimonials</a></li>
+      <li><a href="contact.html" data-internal data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="lang-switch">
+      <a href="#" data-lang="en">EN</a>
+      <a href="#" data-lang="fr">FR</a>
+      <a href="#" data-lang="ar">AR</a>
+    </div>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
+    <span class="hero-eyebrow" data-i18n="contact.eyebrow">Contact</span>
+    <h1 data-i18n="contact.title">Tell me what you're working on</h1>
+    <p class="lede" data-i18n="contact.lede">Whether it's coaching, a lesson, an advertising brief, or a partnership idea — send the details and I'll reply within two working days.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container split">
+    <div class="form-shell">
+      <form onsubmit="event.preventDefault(); this.querySelector('.form-note').style.display='block';">
+        <div class="field">
+          <label data-i18n="contact.labelName">Full name</label>
+          <input type="text" required>
+        </div>
+        <div class="field">
+          <label data-i18n="contact.labelEmail">Email</label>
+          <input type="email" required>
+        </div>
+        <div class="field">
+          <label data-i18n="contact.labelInterest">I'm interested in</label>
+          <select>
+            <option data-i18n="contact.opt1">Life coaching</option>
+            <option data-i18n="contact.opt2">Private lessons</option>
+            <option data-i18n="contact.opt3">Advertising for my business</option>
+            <option data-i18n="contact.opt4">A partnership</option>
+          </select>
+        </div>
+        <div class="field">
+          <label data-i18n="contact.labelMessage">Message</label>
+          <textarea required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Send message</button>
+        <p class="form-note" style="display:none;margin-top:14px;color:var(--teal);font-size:.9rem;">✓</p>
+      </form>
+    </div>
+    <div>
+      <h3 data-i18n="contact.infoTitle">Other ways to reach me</h3>
+      <p><strong data-i18n="contact.infoEmail">Email</strong>: hello@coachaymen.com</p>
+      <p><strong data-i18n="contact.infoPhone">Phone</strong>: +971 50 000 0000</p>
+      <p data-i18n="contact.infoHours">Typical reply time: 1–2 working days</p>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <div class="footer-links">
+      <a href="contact.html" data-internal data-i18n="nav.contact">Contact</a>
+      <a href="partnerships.html" data-internal data-i18n="nav.partnerships">Partnerships</a>
+      <a href="testimonials.html" data-internal data-i18n="nav.testimonials">Testimonials</a>
+    </div>
+    <div class="copyright"><span data-i18n="brand">Aïcha Rahal</span> &copy; 2026 &mdash; <span data-i18n="footer.rights">All rights reserved.</span></div>
+  </div>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
